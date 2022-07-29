@@ -1,2 +1,3 @@
 # SDPre
-Hello World!  second try
+Hello World!  
+Reminder, git now uses "main" instead of "master", as in git push origin MAIN

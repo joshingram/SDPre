@@ -4,15 +4,16 @@ public class Objective9Lab5 {
 
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
-
-      System.out.println("Please enter a number: ");
-      double num1 = scanner.nextDouble();
-
-      System.out.println("Please enter a second number: ");
-      double num2 = scanner.nextDouble();
+      double num1, num2;
       int choice = 0;
       boolean keepGoing = true;
+      double answer = 0.0;
 
+      System.out.println("Please enter a number: ");
+      num1 = scanner.nextDouble();
+
+      System.out.println("Please enter a second number: ");
+      num2 = scanner.nextDouble();
 
       while (keepGoing) {
         printMenu();
@@ -22,16 +23,16 @@ public class Objective9Lab5 {
 
         switch (choice) {
         case 1:
-          double answer1 = findSum(num1, num2);
-          System.out.println(num1 + " + " + num2 + " = " + answer1);
+          answer = findSum(num1, num2);
+          System.out.println(num1 + " + " + num2 + " = " + answer);
           break;
         case 2:
-          double answer2 = findAverage(num1, num2);
-          System.out.println("The average of " + num1 + " and " + num2 + " is " + answer2);
+          answer = findAverage(num1, num2);
+          System.out.println("The average of " + num1 + " and " + num2 + " is " + answer);
           break;
         case 3:
-          double answer3 = calcTax(num1, num2);
-          System.out.println("The amount in tax to be collected from a purchase of " + num1 + " and " + num2 + " is " + answer3);
+          answer = calcTax(num1, num2);
+          System.out.println("The amount in tax to be collected from a purchase of " + num1 + " and " + num2 + " is " + answer);
           break;
         case 4:
           System.out.println("You've chosen to quit.");
